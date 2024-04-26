@@ -17,6 +17,43 @@
   scroll-behavior: smooth;
 }
 
+/* Scrollbar Styles */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #72767d #2f3136;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2f3136;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #72767d;
+  border-radius: 10px;
+  border: 2px solid #2f3136;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Adjust scrollbar width and colors for mobile */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #72767d;
+    border-radius: 10px;
+    border: 1px solid #2f3136;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
