@@ -21,7 +21,7 @@
             let whatsappLink = `https://wa.me/254757169030?text=${encodedMessage}`;
 
             window.open(whatsappLink, '_blank');
-        }, 1000); // Display "Message Sent" status for 1 second (1000 milliseconds)
+        }, 2000);
     });
 
 })();
