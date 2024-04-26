@@ -16,9 +16,10 @@
         setTimeout(function() {
             // Hide "Message Sent" status after one second
             sentMessage.classList.remove('d-block');
-            
-            let encodedMessage = encodeURIComponent(`My name is ${name}. ${message}`);
+
+            let encodedMessage = encodeURIComponent((name && name.trim() !== '') ? `My name is ${name}. ${message}` : message);
             let whatsappLink = `https://wa.me/254757169030?text=${encodedMessage}`;
+
             window.open(whatsappLink, '_blank');
         }, 1000); // Display "Message Sent" status for 1 second (1000 milliseconds)
     });
