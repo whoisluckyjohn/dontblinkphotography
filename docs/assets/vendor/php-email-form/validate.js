@@ -17,6 +17,7 @@
             // Hide "Message Sent" status after one second
             sentMessage.classList.remove('d-block');
 
+            // Generate whatsapp link, if name is undefined, send message only..
             let encodedMessage = encodeURIComponent((name && name.trim() !== '') ? `My name is ${name}. ${message}` : message);
             let whatsappLink = `https://wa.me/254757169030?text=${encodedMessage}`;
 
