@@ -1307,7 +1307,7 @@ i.bi {
   text-align: center;
   margin: 20px;
   padding: 20px;
-  background-color: #191919;
+  background-color: #181818;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
   transition: transform 0.3s ease-in-out;
@@ -1315,8 +1315,8 @@ i.bi {
 
 }
 
-.team-member:hover {
-  transform: translateY(-10px);
+.team-member:hover img {
+  transform: scale(1.1);
 }
 
 .team-member img {
